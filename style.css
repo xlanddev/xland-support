@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+
+body{
+    background:linear-gradient(135deg,#050505,#111,#1a1a1a);
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* نوار بالا */
+
+nav{
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    gap:20px;
+    border-bottom:2px solid lime;
+    box-shadow:0 0 20px lime;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+/* دکمه های منو */
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border:2px solid lime;
+    border-radius:12px;
+    transition:0.4s;
+    font-size:18px;
+    position:relative;
+    overflow:hidden;
+    background:#111;
+}
+
+/* افکت نور */
+
+nav a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(0,255,0,0.3);
+    transition:0.5s;
+}
+
+nav a:hover::before{
+    left:100%;
+}
+
+nav a:hover{
+    transform:scale(1.1);
+    box-shadow:
+    0 0 10px lime,
+    0 0 20px lime,
+    0 0 40px lime;
+    color:lime;
+}
+
+/* بخش اصلی */
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:80px;
+    padding:20px;
+}
+
+/* عنوان اصلی */
+
+h1{
+    font-size:70px;
+    color:lime;
+    text-shadow:
+    0 0 10px lime,
+    0 0 20px lime,
+    0 0 40px lime;
+    animation:glow 2s infinite alternate;
+    margin-bottom:20px;
+}
+
+/* متن توضیح */
+
+.subtitle{
+    color:#aaa;
+    margin-bottom:40px;
+    font-size:20px;
+}
+
+/* انیمیشن متن */
+
+@keyframes glow{
+
+    from{
+        text-shadow:
+        0 0 10px lime,
+        0 0 20px lime;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px lime,
+        0 0 40px lime,
+        0 0 80px lime;
+    }
+
+}
+
+/* سرچ */
+
+input{
+    width:350px;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:#1c1c1c;
+    color:white;
+    margin-bottom:20px;
+    font-size:16px;
+    border:2px solid #333;
+    transition:0.3s;
+}
+
+input:focus{
+    border:2px solid lime;
+    box-shadow:0 0 20px lime;
+}
+
+/* textarea */
+
+textarea{
+    width:350px;
+    height:120px;
+    background:#1c1c1c;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    padding:15px;
+    color:white;
+    resize:none;
+    border:2px solid #333;
+    transition:0.3s;
+    font-size:16px;
+}
+
+textarea:focus{
+    border:2px solid lime;
+    box-shadow:0 0 20px lime;
+}
+
+/* دکمه */
+
+button{
+    margin-top:20px;
+    padding:15px 40px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(45deg,lime,#6FB007);
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+/* افکت دکمه */
+
+button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.3);
+    transition:0.5s;
+}
+
+button:hover::before{
+    left:100%;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:
+    0 0 20px lime,
+    0 0 40px lime,
+    0 0 80px lime;
+}
+
+/* کامنت ها */
+
+#comments{
+    margin-top:50px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+/* کارت کامنت */
+
+.comment{
+    width:380px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:20px;
+    text-align:right;
+    transition:0.4s;
+    box-shadow:0 0 10px rgba(0,255,0,0.2);
+    animation:fadeIn 0.5s ease;
+}
+
+.comment:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 0 20px lime,
+    0 0 40px rgba(0,255,0,0.5);
+}
+
+/* انیمیشن ورود */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* متن دانلود */
+
+p{
+    margin-top:30px;
+    width:70%;
+    line-height:2;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* به زودی */
+
+h2{
+    margin-top:20px;
+    color:red;
+    text-shadow:
+    0 0 10px red,
+    0 0 20px red;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+/* موبایل */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:40px;
+    }
+
+    input,
+    textarea,
+    .comment{
+        width:90%;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+}
