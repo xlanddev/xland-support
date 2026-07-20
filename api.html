@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XLAND API</title>
+
+<link rel="icon" href="xland-icon.png">
+
+<link rel="stylesheet" href="api.css">
+
+<link rel="stylesheet" href="loader.css">
+
+</head>
+
+<body>
+
+<div class="account-box">
+
+    <button id="accountBtn" class="signin-btn">
+    👤 Sign In
+</button>
+
+
+    <div id="profileMenu" class="profile-menu">
+
+        <a href="apikey.html">
+            🔑 API Keys
+        </a>
+
+        <button id="logoutBtn">
+
+            🚪 Log Out
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<div id="loader">
+
+    <img src="loading.gif" alt="Loading">
+
+</div>
+
+<header class="hero">
+
+<h1>🌍 XLAND API</h1>
+
+<p>Build powerful applications with XLAND API</p>
+
+<a href="#plans" class="btn">
+Get Started
+</a>
+
+
+</header>
+
+<section class="api-status">
+
+    <div class="status-card">
+
+        <div class="icon">🟢</div>
+
+        <h3>ONLINE</h3>
+
+        <p>System Status</p>
+
+    </div>
+
+    <div class="status-card">
+
+        <div class="icon">1.0</div>
+
+        <h3>Version</h3>
+
+        <p>Current Release</p>
+
+    </div>
+
+    <div class="status-card">
+
+        <div class="icon">🌍</div>
+
+        <h3>REST API</h3>
+
+        <p>Architecture</p>
+
+    </div>
+
+    <div class="status-card">
+
+        <div class="icon">{ }</div>
+
+        <h3>JSON</h3>
+
+        <p>Response Format</p>
+
+    </div>
+
+
+</section>
+
+<section class="features">
+
+<h2>✨ Features</h2>
+
+<div class="grid">
+
+<div class="card">
+⚡ Fast
+</div>
+
+<div class="card">
+🔒 Secure
+</div>
+
+<div class="card">
+🌐 REST API
+</div>
+
+<div class="card">
+📄 JSON Response
+</div>
+
+</div>
+
+</section>
+
+<section id="plans">
+
+<h2>💰 Pricing Plans</h2>
+
+<div class="plans">
+
+<div class="plan free">
+
+<h3>🟢 Free</h3>
+
+<ul>
+
+<li>✔ Basic API</li>
+
+<li>✔ Community Support</li>
+
+<li>✔ Limited Requests</li>
+
+<li>✔ Free Forever</li>
+
+</ul>
+
+<button>Free</button>
+
+</div>
+
+<div class="plan pro">
+
+<h3>🔥 Pro</h3>
+
+<ul>
+
+<li>✔ Higher Limits</li>
+
+<li>✔ Priority Support</li>
+
+<li>✔ Premium Features</li>
+
+<li>✔ Coming Soon</li>
+
+</ul>
+
+<button>Coming Soon</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="docs">
+
+<button id="docsBtn">
+    📚 Read Documentation
+</button>
+
+</section>
+
+<section class="example">
+
+    <h2>💻 Example</h2>
+
+    <h3>GET /comments</h3>
+
+    <pre><code>[
+    {
+        "username":"User",
+        "message":"Hello XLAND!"
+    }
+]</code></pre>
+
+    <h3>POST /comments</h3>
+
+    <pre><code>{
+    "username":"User",
+    "message":"Hello!"
+}</code></pre>
+
+</section>
+
+<footer>
+
+© 2026 XLAND API
+
+</footer>
+
+<!-- Logout Modal -->
+
+<div id="logoutModal" class="logout-modal">
+
+    <div class="logout-box">
+
+        <h2>🚪 Log Out?</h2>
+
+        <p>Are you sure you want to log out?</p>
+
+        <div class="logout-buttons">
+
+            <button id="yesLogout" class="yes-btn">
+
+                Yes
+
+            </button>
+
+            <button id="noLogout" class="no-btn">
+
+                No
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="security.js"></script>
+
+<script src="api.js"></script>
+
+<script src="api-account.js"></script>
+
+<script src="api-profile.js"></script>
+
+<script src="loader.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xland Script</title>
+
+    <link rel="stylesheet" href="xland-script.css">
+
+    <link rel="icon" type="image/png" href="xland-icon.png">
+    
+</head>
+<body>
+
+    <!-- Download Modal -->
+
+<div id="downloadModal" class="modal">
+
+    <div class="modal-box">
+
+        <h2>Download Script</h2>
+
+        <p>Do you want to download this script?</p>
+
+        <div class="modal-buttons">
+
+            <button id="cancelBtn">
+                Cancel
+            </button>
+
+           <button onclick="window.location.href='download.html'">
+    Download
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<header class="script-header">
+
+    <h1>Xland Script</h1>
+
+    <button id="signInBtn" class="signin-btn">
+        👤 Sign In
+    </button>
+
+</header>
+
+<div class="container">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>Scripts</h2>
+
+        <input
+            type="text"
+            placeholder="Search..."
+            id="search">
+
+        <ul id="scriptList">
+
+        </ul>
+
+    </aside>
+
+    <!-- Code Viewer -->
+
+    <main class="viewer">
+
+        <div class="viewer-header">
+
+            <span>Select a Script</span>
+
+        </div>
+
+        <pre id="codeViewer">
+
+Select a script from the menu...
+
+        </pre>
+
+        <div class="buttons">
+
+            <button id="copyBtn">
+                Copy
+            </button>
+
+            <button id="downloadBtn">
+                Download
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div id="profileMenu" class="profile-menu">
+
+    <button id="changePasswordBtn">🔑 Change Password</button>
+
+    <button id="aboutBtn">ℹ️ About</button>
+
+    <button id="logoutBtn">🚪 Log Out</button>
+
+</div>
+
+<div id="logoutModal" class="modal">
+
+    <div class="modal-box">
+
+        <h2>Log Out</h2>
+
+        <p>Are you sure you want to log out?</p>
+
+        <div class="modal-buttons">
+
+            <button id="noLogout">No</button>
+
+            <button id="yesLogout">Yes</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="security.js"></script>
+
+<script src="xland-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+/* ===== Hero ===== */
+
+body{
+
+    margin:0;
+
+    background:#080808;
+
+    color:white;
+
+    font-family:Arial, sans-serif;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:linear-gradient(180deg,#101010,#050505);
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    color:#00ff88;
+
+    text-shadow:0 0 20px #00ff88;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    color:#bbb;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:10px 25px;
+
+    background:#00aa55;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    box-shadow:0 0 20px #00ff88;
+
+}
+
+.hero .btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    background:#00ff88;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.hero .btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 25px #00ff88;
+
+}
+
+.features{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:60px 0;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.card{
+
+    background:#111;
+
+    border:1px solid #00ff88;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(0,255,136,.4);
+
+}
+
+.plans{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.plan{
+
+    width:320px;
+
+    background:#101010;
+
+    border-radius:20px;
+
+    border:1px solid #00ff88;
+
+    padding:30px;
+
+    transition:.3s;
+
+}
+
+.plan:hover{
+
+    transform:scale(1.03);
+
+}
+
+.plan button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    background:#00ff88;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+   API Status Cards
+========================== */
+
+.api-status{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.status-card{
+
+    background:rgba(20,20,20,.75);
+
+    border:1px solid rgba(0,255,136,.25);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.status-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 30px rgba(0,255,136,.35);
+
+}
+
+.status-card .icon{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.status-card h3{
+
+    color:#00ff88;
+
+    font-size:24px;
+
+    margin:10px 0;
+
+}
+
+.status-card p{
+
+    color:#aaa;
+
+    font-size:15px;
+
+}
+
+/* ==========================
+   Documentation
+========================== */
+
+.docs{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.docs h2{
+
+    color:#00ff88;
+
+    font-size:36px;
+
+}
+
+.docs p{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    margin:20px 0;
+
+}
+
+.docs button{
+
+    background:#00ff88;
+
+    color:#000;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.docs button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 20px #00ff88;
+
+}
+
+/* ==========================
+   Example
+========================== */
+
+.example{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:70px auto;
+
+}
+
+.example h2{
+
+    color:#00ff88;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.example pre{
+
+    background:#111;
+
+    color:#00ff88;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(0,255,136,.25);
+
+    overflow-x:auto;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#999;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    background:#0d0d0d;
+
+}
+
+.example h3{
+
+    color:#00ff88;
+
+    margin-top:30px;
+
+}
+
+.example code{
+
+    color:#00ff88;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+   Account Button
+========================== */
+
+.account-box{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin:25px 40px;
+
+}
+
+.signin-btn{
+
+    background:#00ff88;
+
+    color:#111;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.signin-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 18px rgba(0,255,136,.5);
+
+}
+
+@media(max-width:768px){
+
+.account-box{
+
+    justify-content:center;
+
+    margin:20px;
+
+}
+
+.signin-btn{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
+}
+
+.profile-menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:65px;
+
+    right:0;
+
+    width:190px;
+
+    background:#1b1b1b;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
+
+.profile-menu.show{
+
+    display:block;
+
+}
+
+.profile-menu a,
+.profile-menu button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover{
+
+    background:#00ff88;
+
+    color:black;
+
+}
+
+/* ===========================
+      Logout Modal
+=========================== */
+
+.logout-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(6px);
+
+    z-index:9999;
+
+}
+
+.logout-modal.show{
+
+    display:flex;
+
+}
+
+.logout-box{
+
+    width:360px;
+
+    max-width:90%;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(25,25,25,.92);
+
+    border:1px solid rgba(0,255,136,.2);
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+
+}
+
+.logout-box h2{
+
+    color:#00ff88;
+
+    margin-bottom:15px;
+
+}
+
+.logout-box p{
+
+    color:#ddd;
+
+    margin-bottom:25px;
+
+}
+
+.logout-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.yes-btn,
+.no-btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.yes-btn{
+
+    background:#00ff88;
+
+    color:#111;
+
+}
+
+.no-btn{
+
+    background:#444;
+
+    color:white;
+
+}
+
+.yes-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.no-btn:hover{
+
+    background:#666;
+
+}

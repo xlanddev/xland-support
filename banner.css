@@ -1,0 +1,196 @@
+/* ===========================
+   XLAND Banner Slider
+   Version 3.1
+=========================== */
+
+.banner-slider{
+    width:90%;
+    max-width:1100px;
+    margin:25px auto;
+
+    background:linear-gradient(135deg,#0b0b0b,#1a1a1a);
+
+    border:2px solid #00ff66;
+    border-radius:18px;
+
+    box-shadow:
+        0 0 15px rgba(0,255,102,.25),
+        0 0 35px rgba(0,255,102,.12);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.banner-slider:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(0,255,102,.45),
+        0 0 60px rgba(0,255,102,.20);
+}
+
+/* محتوا */
+
+.banner-content{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:35px;
+}
+
+.banner-content h2{
+
+    color:#00ff66;
+
+    font-size:30px;
+
+    margin-bottom:12px;
+
+    text-shadow:0 0 10px #00ff66;
+}
+
+.banner-content p{
+
+    color:#ddd;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:22px;
+}
+
+/* دکمه */
+
+.banner-content a{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    background:#00ff66;
+
+    color:#111;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.banner-content a:hover{
+
+    background:#00cc55;
+
+    transform:scale(1.06);
+
+    box-shadow:0 0 18px #00ff66;
+}
+
+/* فلش ها */
+
+.banner-btn{
+
+    width:60px;
+
+    height:100%;
+
+    border:none;
+
+    background:transparent;
+
+    color:#00ff66;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.banner-btn:hover{
+
+    background:rgba(0,255,102,.12);
+
+    color:white;
+}
+
+/* موبایل */
+
+@media(max-width:768px){
+
+.banner-slider{
+
+    flex-direction:column;
+}
+
+.banner-btn{
+
+    width:100%;
+    height:55px;
+}
+
+.banner-content{
+
+    padding:25px;
+}
+
+.banner-content h2{
+
+    font-size:24px;
+}
+
+.banner-content p{
+
+    font-size:15px;
+}
+
+}
+
+/* نقاط اسلایدر */
+
+.banner-indicators{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#666;
+
+    transition:0.3s;
+
+}
+
+.dot.active{
+
+    background:#00ff66;
+
+    box-shadow:0 0 10px #00ff66;
+
+    transform:scale(1.2);
+
+}

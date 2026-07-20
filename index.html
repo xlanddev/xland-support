@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xland Support</title>
+
+    <link rel="icon" type="image/png" href="xland-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="banner.css">
+
+</head>
+
+<body>
+
+<!-- 🔔 نوار اعلان آپدیت -->
+<div id="updateBanner" class="update-banner">
+🎉 سایت Xland Support آپدیت شد! برای مشاهده تغییرات به بخش News Xland مراجعه کنید.
+<button onclick="closeBanner()">✖</button>
+</div>
+
+    <!-- دکمه منوی موبایل -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- نوار بالا -->
+    <nav id="navbar">
+
+        <a href="rules.html">
+            قوانین xland
+        </a>
+
+<a href="news.html">
+            News Xland
+        </a>
+
+
+        <a href="xland-map.html">
+            دانلود مپ xland
+        </a>
+
+        <a href="xland.html">
+            دانلود بازی xland game
+        </a>
+
+        <a href="endless.html">
+            دانلود بازی EndIessRoadHorror 3D
+        </a>
+
+        <a href="about.html">
+            درباره ما
+        </a>
+
+         <div class="dropdown">
+
+    <a href="xland-script.html" class="dropbtn">
+        Developer ▼
+    </a>
+
+    <div class="dropdown-content">
+
+        <a href="xland-script.html">
+            📜 Xland Script
+        </a>
+
+        <a href="api.html">
+            🌍 Xland API
+        </a>
+
+        <a href="xland-news.html">
+    📰 XLAND News
+</a>
+
+    </div>
+
+</div>
+
+    </nav>
+
+   <div class="banner-slider">
+
+    <button class="banner-btn prev">❮</button>
+
+    <div class="banner-content">
+
+        <h2 id="banner-title"></h2>
+
+        <p id="banner-text"></p>
+
+        <a id="banner-link" href="#">
+            مشاهده
+        </a>
+
+        <div class="banner-indicators">
+
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+
+    </div>
+
+    <button class="banner-btn next">❯</button>
+
+</div>
+
+    <!-- بخش اصلی -->
+
+    <div class="container">
+
+        <h1>XLAND SUPPORT</h1>
+
+        <p class="subtitle">
+            مشکلات، پیشنهادها و نظرات خود را در بخش کامنت‌ها با ما به اشتراک بگذارید.
+        </p>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="سرچ صفحه ی مورد نظر...">
+
+        <div class="comment-box">
+
+            <textarea
+                id="commentInput"
+                placeholder="  نظر خود را بنویسید..."></textarea>
+
+            <br>
+
+            <button onclick="addComment()">
+                ارسال کامنت
+            </button>
+
+        </div>
+
+        <div id="comments"></div>
+
+    </div>
+
+    <script src="security.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="banner.js"></script>
+
+</body>
+
+</html>
