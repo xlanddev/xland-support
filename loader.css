@@ -1,0 +1,41 @@
+/* ==========================
+        XLAND Loader
+========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0d0d0d;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+    transition:.4s;
+
+}
+
+#loader.hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+#loader img{
+
+    width:140px;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}

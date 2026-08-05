@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XLAND API Keys</title>
+
+<link rel="icon" href="xland-icon.png">
+
+<link rel="stylesheet" href="api.css">
+<link rel="stylesheet" href="loader.css">
+<link rel="stylesheet" href="apikey.css">
+
+</head>
+
+<body>
+
+<div id="loader">
+    <img src="loading.gif" alt="Loading">
+</div>
+
+<div class="container">
+
+    <h1>🔑 API Keys</h1>
+
+    <p>Your personal API Key</p>
+
+    <div class="key-box">
+
+        <input
+            type="text"
+            id="apiKey"
+            readonly>
+
+        <button id="copyBtn">
+            📋 Copy
+        </button>
+
+    </div>
+
+    <br>
+
+    <button id="generateBtn">
+        🔄 Generate New Key
+    </button>
+
+    <br><br>
+
+    <a href="api.html" class="back-btn">
+        ⬅ Back
+    </a>
+
+</div>
+
+<script src="security.js"></script>
+
+<script src="loader.js"></script>
+<script src="apikey.js"></script>
+
+</body>
+
+</html>
